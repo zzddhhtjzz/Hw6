@@ -40,6 +40,7 @@
 	<classpathentry kind="lib" path="xml/sites.html"/>
 	<classpathentry kind="lib" path="xml/sites2equipment.xslt"/>
 	<classpathentry kind="lib" path="xml/sites2html.xslt"/>
+	<classpathentry kind="lib" path="xml/sites.xml"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/EclipseLink 2.5.2">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
