@@ -35,6 +35,11 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/oauth-server-1.19.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/oauth-signature-1.19.jar"/>
 	<classpathentry kind="lib" path="sql/sites.sql"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.35-bin.jar"/>
+	<classpathentry kind="lib" path="xml/equipments.html"/>
+	<classpathentry kind="lib" path="xml/sites.html"/>
+	<classpathentry kind="lib" path="xml/sites2equipment.xslt"/>
+	<classpathentry kind="lib" path="xml/sites2html.xslt"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/EclipseLink 2.5.2">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>

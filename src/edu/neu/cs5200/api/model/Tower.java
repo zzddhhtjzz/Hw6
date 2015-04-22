@@ -1,25 +1,33 @@
-package edu.neu.cs5200.api;
+package edu.neu.cs5200.api.model;
 
 import java.util.List;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 
 
 @Entity
+@XmlRootElement
+@XmlAccessorType(value = XmlAccessType.FIELD)
 public class Tower{
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@XmlAttribute
 	private int id;
-	
+	@XmlAttribute
 	private String name;
-	
+	@XmlAttribute
 	private int height;
-
+	@XmlAttribute
 	private int sides;
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="siteId")
-	private Site site;
-	@OneToMany(mappedBy="tower")
+	
+	@OneToMany(mappedBy="tower", cascade=CascadeType.ALL, orphanRemoval=true)
+	@XmlElement(name="equipment")
 	private List<Equipment> equipments;
+	@ManyToOne
+	@JoinColumn(name="siteId")
+	@XmlTransient
+	private Site site;
 	
 	
 	

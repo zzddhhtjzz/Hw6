@@ -1,24 +1,28 @@
-package edu.neu.cs5200.api;
+package edu.neu.cs5200.api.model;
 
 import javax.persistence.*;
-
+import javax.xml.bind.annotation.*;
 
 @Entity
+@XmlRootElement
+@XmlAccessorType(value = XmlAccessType.FIELD)
 public class Equipment{
 	@Id
-	
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@XmlAttribute
 	private int id;
-	
+	@XmlAttribute
 	private String name;
-
+	@XmlAttribute
 	private String brand;
-
+	@XmlAttribute
 	private String description;
-
+	@XmlAttribute
 	private double price;
 
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name="towerId")
+	@XmlTransient
 	private Tower tower;
 	
 	

@@ -1,20 +1,29 @@
-    package edu.neu.cs5200.api;
+    package edu.neu.cs5200.api.model;
 	import java.util.List;
 
 import javax.persistence.*;
-
+import javax.xml.bind.annotation.*;
 
     @Entity
+    @NamedQueries(value = { @NamedQuery(
+    		name = "findAllSites",
+    		query = "select dir from Site dir") })
+    @XmlRootElement
+    @XmlAccessorType(value = XmlAccessType.FIELD)
 	public class Site {
 		@Id
+		@GeneratedValue(strategy=GenerationType.IDENTITY)
+		@XmlAttribute
 		private int id;
-		
+		@XmlAttribute
 		private String name;
+		@XmlAttribute
 		private int latitude;
-	
+		@XmlAttribute
 		private int longitude;
 		
-		@OneToMany(mappedBy="site")
+		@OneToMany(mappedBy="site",cascade=CascadeType.ALL, orphanRemoval=true)
+		@XmlElement(name="tower")
 		private List<Tower> towers;
 	
 	
