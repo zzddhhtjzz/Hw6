@@ -13,29 +13,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jackson-core-asl-1.9.2.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jackson-jaxrs-1.9.2.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jackson-xc-1.9.2.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-apache-client-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-atom-abdera-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-client-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-core-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-guice-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-json-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-multipart-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-server-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-servlet-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-simple-server-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jersey-spring-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jettison-1.1.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jsr311-api-1.1.1.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.29-bin.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/oauth-client-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/oauth-server-1.19.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/oauth-signature-1.19.jar"/>
 	<classpathentry kind="lib" path="sql/sites.sql"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.35-bin.jar"/>
 	<classpathentry kind="lib" path="xml/equipments.html"/>
 	<classpathentry kind="lib" path="xml/sites.html"/>
 	<classpathentry kind="lib" path="xml/sites2equipment.xslt"/>
@@ -47,5 +25,10 @@
 			<attribute name="owner.project.facets" value="jpt.jpa"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="src/edu/neu/cs5200/api/dao/SiteDao.java"/>
+	<classpathentry kind="lib" path="src/edu/neu/cs5200/api/model/Equipment.java"/>
+	<classpathentry kind="lib" path="src/edu/neu/cs5200/api/model/Site.java"/>
+	<classpathentry kind="lib" path="src/edu/neu/cs5200/api/model/Sites.java"/>
+	<classpathentry kind="lib" path="src/edu/neu/cs5200/api/model/Tower.java"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

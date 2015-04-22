@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sites>
   <site id="1" name="Site 1" latitude="12.23" longitude="23.34">
     <tower id="1" name="Tower A" height="123.45" sides="3">
       <equipment id="1" name="Equipment 1" brand="Brand 1" description="Description 1" price="1234.56"/>
@@ -19,4 +20,4 @@
       <equipment id="8" name="Equipment 8" brand="Brand 8" description="Description 8" price="..."/>
     </tower>
   </site>
-
+</sites>
